@@ -1,0 +1,21 @@
+mixin css(fN)
+    link(rel="stylesheet", href="/#{fN}.css")
+
+mixin s(fN)
+    script(src="/#{fN}.js")
+
+mixin S(scrps)
+    - each s in scrps
+        +s(s)
+
+
+mixin j(js)
+    script.
+        #{js}
+
+mixin v(n,v)
+    script.
+        #{n} = "#{v}"
+
+
+

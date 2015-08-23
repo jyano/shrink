@@ -1,0 +1,33 @@
+include mixins
+
+!!! 5
+html(lang="en")
+    head
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        script.
+          _app = wappyApp = '#{app}'
+          _pam = wappyPam = '#{pam}'
+
+
+        //front
+        +S(['us','string','both','genBoth'])
+        +S(['bothUnder', 'bothMath', 'bothTime', 'bothString','log'])
+        +S(['jq','oo','qq','jqfn','html'])
+
+
+        //can
+        +S(['ctx', 'can','canApps'])
+        //create
+        +S(['cjs','cjsMC'])
+        +S(['easel', 'cjsEvent' ,'easelProtos','easelProtosMore','create','graphicsMore','filts'])
+        //anim
+        +S(['data','anims', 'anim', 'graphicsTests'])
+
+
+
+        //fiz
+        +S(['bx','b2dutils', 'boxProtos'])
+        +S(['preworld', 'world','makeworld','query','coll','co','joints','geo', 'player'])
+        +S(['games','netguy', 'play'])
+
+        body

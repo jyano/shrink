@@ -53,6 +53,7 @@ dirs = [
     '/lib/fiz/protos', '/lib/fiz/fizApps',
     '/lib/geo', //,'/../js/phaserjs', '/../js/phaser2', '/../js/melon', '/../js/three'
     '/spaz',
+    '/spaz/fizApps',
     '/wap'
 ]
 
