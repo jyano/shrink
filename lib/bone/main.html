@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <script src="public/jquery.js"></script>
+    <script src="public/handlebars.js"></script>
+    <script src="public/underscore.js"></script>
+    <script src="public/backbone.js"></script>
+</head>
+
+
+<body>
+
+
+<script id="entry-template" type="text/x-handlebars-template">
+    template content {{name}}
+    {{> hello}}
+    <h2>By {{fullName author}}</h2>
+</script>
+
+
+<script id="partial1" type="text/x-handlebars-template">
+    <div><span> hello {{name}} </span></div>
+</script>
+
+
+
+<div id="thediv"></div>
+
+<script>
+
+    //Handlebars.registerHelper()
+
+    Handlebars.registerPartial( 'hello', $("#partial1").html())
+    Handlebars.registerHelper( 'fullName', function(person) {
+        return person.firstName + " " + person.lastName
+    })
+
+
+
+
+
+
+
+    source= $("#entry-template").html()
+    template = Handlebars.compile(source)
+    content = template({
+        name:'jason yano',
+        author: {firstName: "Alan", lastName: "Johnson"}
+    })
+
+    $('#thediv').html(content)
+
+</script>
+
+
+
+
+
+</body>
+</html>

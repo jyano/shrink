@@ -1,0 +1,56 @@
+//to do:
+
+//remove dependence on b2d.p() from 'front' files..
+ so we can separate out them out into their own front library
+//front library should not have graphics yet...
+
+
+
+resources
+    defaultMug
+
+tests
+    routeTests
+
+app
+    app
+    commSocket
+    game
+    nap
+    nav
+    socekt
+    text.html
+    ui
+    uiapp
+
+base
+
+    objects
+    glossary
+    core
+    can
+    sys
+    workerFile
+    jqueryplugins
+
+
+html
+    boot
+    buts
+    struct
+    html
+    dv
+
+
+lib
+    draw
+    event
+    move
+    time
+    inputs
+    math
+    dim
+
+
+old
+    qq
