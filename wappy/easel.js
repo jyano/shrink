@@ -439,13 +439,7 @@ T.m=function( ticks  ){
     return T.getMeasuredTickTime (ticks )} //ticks: // optional The number of previous ticks over which to measure the average time spent in a tick.Defaults to the number of ticks per second.To get only the last tick's time, pass in 1.
 
 
-Q = function(){
-    var g = G(arguments), o, q
-    o = g.F ? {c: g.f} : {m: g.f, c: g.s}
-    o.m = o.m || ['me', 'guy', 'sun', 'chicks', 'earth']
-    q = new cjs.LoadQueue
-    Q = q.c(o.c).m(o.m)
-}
+
 WHYQ = function () {
     //to shape -> ct.circle = function(x,y,r,c){var ct=this;ct.A(cjs.circle(x,y,r,c));return ct}
 // 'P' is avaible.  potition?  (M is taken by Math, but mouse needs something)
@@ -520,3 +514,14 @@ WHYQ = function () {
         cjs.Keys.d = cjs.Keys.down = false
     })
 }
+
+
+
+Q = function(){ $l('q from spaz (easel.js)')
+    var g = G(arguments), o, q
+    o = g.F ? {c: g.f} : {m: g.f, c: g.s}
+    o.m = o.m || ['me', 'guy', 'sun', 'chicks', 'earth']
+    q = new cjs.LoadQueue
+    Q = q.c(o.c).m(o.m)
+}
+

@@ -1,8 +1,9 @@
-J.rgb=function(r,g,b,a){var str
+cjs.rgb=function(r,g,b,a){var str
     a = N(a)? a: 1
     str = 'rgba(' + r + ',' + g + ',' + b + ',' + a + ')'
     return str
 }
+
 //
 $BF= $Bf= $FB= $FlB= $Bfl= $bF= function(){var g=G(arguments),fl,o
     o = {x:g[0], y:g[1], q:g[2]}

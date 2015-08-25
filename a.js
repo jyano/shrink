@@ -1,3 +1,43 @@
+dirs = [
+
+
+    '/lib/both', '/lib/both/deps',
+    '/lib/front', '/lib/front/deps',
+    '/lib/boot', '/lib/boot/deps',
+
+
+
+
+    '/lib/easel',
+    '/lib/easel/create',
+    '/lib/easel/createCore',
+    '/lib/easel/protoCore',
+    '/lib/box', '/lib/box/coll', '/lib/box/query',
+    '/lib/box/world', '/lib/box/arcade', '/lib/box/advancedButWorks',
+    '/lib/box/protos', '/lib/box/fizApps',
+
+
+    '/lib/anim',
+
+
+
+    '/lib/geo', //,'/../js/phaserjs', '/../js/phaser2', '/../js/melon', '/../js/three'
+    '/spaz',
+    '/spaz/fizApps',
+    '/wappy',
+    '/public/deps', '/public/deps/css', '/public/deps/js', '/public/pics', '/public/graphics', '/public/uploads', '/public/deps/ui-images', // assets: where i can publically, statically fetch items from // css, fonts, js (bs, cjs, jq, string, us)
+
+
+    '/apps/wappy'
+]
+
+
+
+
+
+
+
+
 require('./server/both')
 
 $h=  require('http'); $p=   require('path'); $f=  require('fs')
@@ -39,41 +79,7 @@ require('./server/routes/appRoutes')()
 $a.g('/play/:a/:p?', function (q, p) {
     p.render('play', {app: q.params.a, pam: q.params.p})
 })
-dirs = [
 
-    '/public/deps', '/public/deps/css', '/public/deps/js', '/public/pics', '/public/graphics', '/public/uploads',
-    '/public/deps/ui-images', // assets: where i can publically, statically fetch items from // css, fonts, js (bs, cjs, jq, string, us)
-
-    '/lib/both',
-
-
-    '/lib/front',
-    '/lib/front/deps',
-
-    '/lib/front/html',
-    '/lib/front/rules',
-    '/lib/front/dom',
-    '/lib/front/js',
-
-
-
-    '/lib/front/css',
-    '/lib/front/test',
-    '/lib/frontAdv',
-
-
-
-    '/lib/boot',
-    '/lib/easel/create', '/lib/easel/createCore', '/lib/easel/protoCore',
-    '/lib/fiz', '/lib/fiz/coll', '/lib/fiz/query', '/lib/fiz/world', '/lib/fiz/arcade', '/lib/fiz/advancedButWorks',
-    '/lib/fiz/protos', '/lib/fiz/fizApps',
-    '/lib/geo', //,'/../js/phaserjs', '/../js/phaser2', '/../js/melon', '/../js/three'
-    '/spaz',
-    '/spaz/fizApps',
-    '/wappy',
-
-    '/apps/wappy'
-]
 
 
 _.e(dirs, function (dir) {

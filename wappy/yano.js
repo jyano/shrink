@@ -1,6 +1,15 @@
 
 
 
+$.sr= $.fn.src
+$.ro= $.fn.role
+$.cx= $.fn.ctx
+//$.slP = $.fn.selPic
+
+Y = window['Y'] || {}
+Yano = {}
+
+
 maybeOld()
 function maybeOld() {
 //alert if used
