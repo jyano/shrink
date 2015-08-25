@@ -6,21 +6,14 @@ dirs = [
     '/lib/boot', '/lib/boot/deps',
 
 
-
-
-    '/lib/easel',
-    '/lib/easel/create',
-    '/lib/easel/createCore',
-    '/lib/easel/protoCore',
+    '/lib/create',
+    '/lib/create/deps',
+    '/lib/create/protos',
     '/lib/box', '/lib/box/coll', '/lib/box/query',
     '/lib/box/world', '/lib/box/arcade', '/lib/box/advancedButWorks',
     '/lib/box/protos', '/lib/box/fizApps',
 
-
     '/lib/anim',
-
-
-
     '/lib/geo', //,'/../js/phaserjs', '/../js/phaser2', '/../js/melon', '/../js/three'
     '/spaz',
     '/spaz/fizApps',
