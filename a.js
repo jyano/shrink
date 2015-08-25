@@ -43,10 +43,26 @@ dirs = [
 
     '/public/deps', '/public/deps/css', '/public/deps/js', '/public/pics', '/public/graphics', '/public/uploads',
     '/public/deps/ui-images', // assets: where i can publically, statically fetch items from // css, fonts, js (bs, cjs, jq, string, us)
-    '/lib/core/both',
-    '/lib/core/front', '/lib/core/front/html', '/lib/core/front/rules', '/lib/core/front/dom', '/lib/core/front/js',
-    '/lib/core/front/css', '/lib/core/front/test', '/lib/core/frontAdv',
-    '/lib/core/can',
+
+    '/lib/both',
+
+
+    '/lib/front',
+    '/lib/front/deps',
+
+    '/lib/front/html',
+    '/lib/front/rules',
+    '/lib/front/dom',
+    '/lib/front/js',
+
+
+
+    '/lib/front/css',
+    '/lib/front/test',
+    '/lib/frontAdv',
+
+
+
     '/lib/boot',
     '/lib/easel/create', '/lib/easel/createCore', '/lib/easel/protoCore',
     '/lib/fiz', '/lib/fiz/coll', '/lib/fiz/query', '/lib/fiz/world', '/lib/fiz/arcade', '/lib/fiz/advancedButWorks',
@@ -54,7 +70,9 @@ dirs = [
     '/lib/geo', //,'/../js/phaserjs', '/../js/phaser2', '/../js/melon', '/../js/three'
     '/spaz',
     '/spaz/fizApps',
-    '/wap'
+    '/wappy',
+
+    '/apps/wappy'
 ]
 
 
