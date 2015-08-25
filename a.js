@@ -21,7 +21,8 @@ dirs = [
     '/public/deps', '/public/deps/css', '/public/deps/js', '/public/pics', '/public/graphics', '/public/uploads', '/public/deps/ui-images', // assets: where i can publically, statically fetch items from // css, fonts, js (bs, cjs, jq, string, us)
 
 
-    '/apps/wappy'
+    '/apps/wappy',
+    '/apps/anim'
 ]
 
 
