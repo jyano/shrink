@@ -6,18 +6,18 @@ dirs = [
     '/lib/boot', '/lib/boot/deps',
 
 
-    '/lib/create',
-    '/lib/create/deps',
-    '/lib/create/protos',
+    '/lib/create', '/lib/create/deps',
+
+
     '/lib/box', '/lib/box/coll', '/lib/box/query',
     '/lib/box/world', '/lib/box/arcade', '/lib/box/advancedButWorks',
     '/lib/box/protos', '/lib/box/fizApps',
 
-    '/lib/anim',
+
     '/lib/geo', //,'/../js/phaserjs', '/../js/phaser2', '/../js/melon', '/../js/three'
-    '/spaz',
-    '/spaz/fizApps',
-    '/wappy',
+
+
+    '/spaz', '/spaz/fizApps', '/wappy',
     '/public/deps', '/public/deps/css', '/public/deps/js', '/public/pics', '/public/graphics', '/public/uploads', '/public/deps/ui-images', // assets: where i can publically, statically fetch items from // css, fonts, js (bs, cjs, jq, string, us)
 
 
